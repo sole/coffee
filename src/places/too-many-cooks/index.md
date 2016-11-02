@@ -7,7 +7,10 @@ layout: place.html
 
 address: 30 Great Guilford St, London, SE1 0ES
 cell_reception: blackspot
+laptop_friendly: yes
 noisy: yes
+power: no
+rating: 8
 wifi: limited
 
 ---
