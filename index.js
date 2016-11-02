@@ -9,14 +9,7 @@ var archive = require('metalsmith-archive');
 var path = require('path');
 var geocode = require('./geocode');
 
-var metadata = {
-	site: {
-		title: "Sole's coffee reviews",
-		url: 'https://coffee.soledadpenades.com',
-		author: 'sole',
-		author_url: 'https://soledadpenades.com'
-	}
-};
+var metadata = require('./settings');
 
 function nosy(files, metalsmith, done) {
 	console.log(Object.keys(files));
