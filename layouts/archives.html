@@ -6,7 +6,7 @@
 	<h2>{{ this.year }}</h2>
 	<ul>
       {{#each data}}
-	  <li><a href="/{{this.path}}">{{this.title}}</a></li>
+	  <li><a href="/{{this.path}}">{{this.title}}</a>{{#if this.geocoded}}, {{this.geocoded.city}}{{/if}}</li>
       {{/each}}
     </ul>
 	{{/each}}	

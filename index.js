@@ -7,6 +7,7 @@ var metalPath = require('metalsmith-path');
 var feed = require('@sole/metalsmith-feed-decaf');
 var archive = require('metalsmith-archive');
 var path = require('path');
+var geocode = require('./geocode');
 
 var metadata = {
 	site: {
@@ -55,6 +56,7 @@ Metalsmith(__dirname)
 	//.use(nosy)
 	.use(metalPath())
 	.use(cleanPaths)
+	.use(geocode())
 	.use(archive({
 		collections: 'places'
 	}))

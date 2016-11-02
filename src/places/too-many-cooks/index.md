@@ -1,6 +1,6 @@
 ---
 
-title: Too many cooks cafe
+title: Too many cooks café
 date: 2016-09-08
 tags: flat white, friendly, artsy, creative
 
