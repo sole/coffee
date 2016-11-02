@@ -1,0 +1,16 @@
+{{> header }}
+
+
+	<div>{{{ contents }}}</div>
+	<aside>
+		<h2>Address</h2>
+		<p>{{ this.address }}<br />
+			{{ this.geocoded.country }}</p>
+		<h3>Coordinates</h3>
+		<p><span class="p-latitude">{{this.geocoded.latitude}}</span> N, <span class="p-longitude">{{this.geocoded.longitude}}</span> W
+		<a href="https://maps.google.com/maps?ll={{this.geocoded.latitude}},{{this.geocoded.longitude}}&q={{this.geocoded.latitude}},{{this.geocoded.longitude}}&hl=en&t=m&z=12">Google Maps</a> |
+		<a href="https://www.openstreetmap.org/?mlat={{this.geocoded.latitude}}&mlon={{this.geocoded.longitude}}&zoom=12&layers=M">OpenStreetMaps</a></p>
+	</aside>
+  
+{{> footer }}
+

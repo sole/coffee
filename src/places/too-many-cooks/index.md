@@ -3,6 +3,7 @@
 title: Too many cooks café
 date: 2016-09-08
 tags: flat white, friendly, artsy, creative
+layout: place.html
 
 address: 30 Great Guilford St, London, SE1 0ES
 cell_reception: blackspot
