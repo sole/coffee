@@ -4,7 +4,7 @@
 	
 	<div>{{{ contents }}}</div>
 	<aside>
-		<h2>Facts</h2>
+		<h3>Facts</h3>
 		<ul>
 			<li>Rating: {{this.rating}}</li>
 			<li>Wi-Fi: {{this.wifi}}</li>
@@ -12,10 +12,10 @@
 			<li>Noisy: {{this.noisy}}</li>
 			<li>Last visited: {{this.date}}</li>
 		</ul>
-		<h2>Address</h2>
+		<h4>Address</h4>
 		<p>{{ this.address }}<br />
 			{{ this.geocoded.country }}</p>
-		<h3>Coordinates</h3>
+		<h4>Coordinates</h4>
 		<p><span class="p-latitude">{{this.geocoded.latitude}}</span> N, <span class="p-longitude">{{this.geocoded.longitude}}</span> W<br />
 		<a href="https://maps.google.com/maps?ll={{this.geocoded.latitude}},{{this.geocoded.longitude}}&q={{this.geocoded.latitude}},{{this.geocoded.longitude}}&hl=en&t=m&z=12">Google Maps</a> |
 		<a href="https://www.openstreetmap.org/?mlat={{this.geocoded.latitude}}&mlon={{this.geocoded.longitude}}&zoom=12&layers=M">OpenStreetMaps</a></p>
