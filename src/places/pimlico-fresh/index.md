@@ -11,6 +11,7 @@ laptop_friendly: off-peak
 noisy: yes
 power: no
 rating: 8
+toilet: no
 wifi: no
 
 ---
