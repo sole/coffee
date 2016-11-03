@@ -21,7 +21,7 @@
 		<ul>
 			<li>Rating: {{this.rating}}</li>
 			<li>Wi-Fi: {{this.wifi}}</li>
-			<li>Laptop friendly: {{this.laptop_friendly}} (power sockets: {{this.power}})</li>
+			<li>Laptop friendly: {{this.laptop_friendly}} {{#if this.power}}(power sockets: {{this.power}}){{/if}}</li>
 			<li>Noisy: {{this.noisy}}</li>
 			{{#if this.toilet}}<li>Toilet: {{this.toilet}}</li>{{/if}}
 			<li>Last visited: {{this.date}}</li>
