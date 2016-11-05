@@ -6,6 +6,7 @@ var FileCache = require('file-cache-simple');
 //var tmpPath = tmpDir.path;
 var cache = new FileCache({
 	//cacheDir: tmpPath
+	cacheExpire: 3600 * 24 * 365 // a year! ha!
 });
 
 module.exports = function(options) {

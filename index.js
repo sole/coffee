@@ -49,7 +49,10 @@ Metalsmith(__dirname)
 	//.use(nosy)
 	.use(metalPath())
 	.use(cleanPaths)
-	.use(geocode())
+	.use(geocode({
+		provider: 'google',
+		apiKey: metadata.maps.geocoding
+	}))
 	.use(archive({
 		collections: 'places'
 	}))
