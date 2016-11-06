@@ -22,7 +22,7 @@
 			{{#if this.rating}}<li>Coffee rating: {{this.rating}}</li>{{/if}}
 			{{#if this.wifi}}<li>Wi-Fi: {{this.wifi}}</li>{{/if}}
 			{{#if this.laptop_friendly}}<li>Laptop friendly: {{this.laptop_friendly}} {{#if this.power}}(power sockets: {{this.power}}){{/if}}</li>{{/if}}
-			<li>Noisy: {{this.noisy}}</li>
+			{{#if this.noise}}<li>Noisy: {{this.noisy}}</li>{{/if}}
 			{{#if this.toilet}}<li>Toilet: {{this.toilet}}</li>{{/if}}
 			<li>Last visited: {{this.date}}</li>
 			{{#if this.website}}<li><a href="{{this.website}}">{{this.website}}</a></li>{{/if}}
