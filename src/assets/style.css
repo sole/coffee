@@ -20,7 +20,7 @@ h1 {
 	margin-bottom: 0.5rem;
 }
 
-ul {
+ul, ol {
 	list-style-position: inside;
 }
 
@@ -39,6 +39,14 @@ h2, h3, h4, h5 {
 
 p {
 	margin-bottom: 1rem;
+}
+
+p strong {
+	color: #a00;
+}
+
+p strong:before, p strong:after {
+	content: "*";
 }
 
 main .contents {
