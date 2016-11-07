@@ -19,6 +19,7 @@
 	<aside>
 		<h3>Facts</h3>
 		<ul>
+			{{#if this.permanently_closed}}<li><strong>!!! PERMANENTLY CLOSED !!!</strong></li>{{/if}}
 			{{#if this.rating}}<li>Coffee rating: {{this.rating}}</li>{{/if}}
 			{{#if this.wifi}}<li>Wi-Fi: {{this.wifi}}</li>{{/if}}
 			{{#if this.laptop_friendly}}<li>Laptop friendly: {{this.laptop_friendly}} {{#if this.power}}(power sockets: {{this.power}}){{/if}}</li>{{/if}}
